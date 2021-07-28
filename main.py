@@ -4,10 +4,10 @@ from manimlib import *
 class OpeningManimExample(Scene):
     def construct(self):
         intro_words = TexText("""
-            Or thinking of the plane as $\\mathds{C}$,\\\\
-            this is the map $z \\rightarrow z^2$
+            Mobius Transformation ($z \\in \\mathds{C}$):\\\\
+            $z \\rightarrow \\frac{a z+b}{c z+d}$
         """)
-        intro_words.to_edge(UP)
+        intro_words.to_edge(UL)
 
         self.play(Write(intro_words))
         self.wait(2)
